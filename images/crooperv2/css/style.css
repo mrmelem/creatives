@@ -1,0 +1,15 @@
+body,html{
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    display: block;
+    max-width: 100%;
+    width: 400px;
+}
+
+.preview{
+    border: 1px solid red;
+    max-width: 400px;
+}
