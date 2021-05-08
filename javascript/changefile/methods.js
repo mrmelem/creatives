@@ -14,7 +14,18 @@ function save(data, path) {
     })
 }
 
+function copy(data, patch) {
+    fs.copyFile(data, patch, (err) =>{
+        if (err) {
+            console.log(err.message)
+        }else{
+            console.log('Ok!') 
+        }
+    })
+}
+
 module.exports = {
     load,
-    save
+    save,
+    copy
 }

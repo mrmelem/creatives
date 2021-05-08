@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            font-family: sans-serif;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        ul {
+            display: flex;
+            background-color: white;
+        }
+
+        li {
+            padding: 1rem;
+            cursor: pointer;
+            position: relative;
+        }
+
+        li:hover {
+            background-color: tomato;
+            color: white;
+        }
+
+        .Dropdown {
+            position: absolute;
+            top: 3rem;
+            display: none;
+            background-color: #ccc;
+            color: #444;
+            width: 300px;
+            transform: translateX(-1rem);
+            padding: 1rem;
+        }
+    </style>
+
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <p>Teste 1</p>
+                    <div class="Dropdown">
+                        <label>Dropdown 1</label>
+                    </div>
+                </li>
+                <li>
+                    <p>Teste 2</p>
+                    <div class="Dropdown">
+                        <label>Dropdown 2</label>
+                    </div>
+                </li>
+                <li>
+                    <p>Teste 3</p>
+                    <div class="Dropdown">
+                        <label>Dropdown 3</label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        $('li').hover(function () {
+            $(this).children('.Dropdown').show()
+        }, function () {
+            $(this).children('.Dropdown').hide()
+        })
+
+
+    </script>
+</body>
+
+</html>

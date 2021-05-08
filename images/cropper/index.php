@@ -65,6 +65,7 @@
 
     <div class="preview-box">
         <h1>Teste</h1>
+        <img src="./asset/buffer/608d7537cee07.png" alt="">
     </div>
 
 

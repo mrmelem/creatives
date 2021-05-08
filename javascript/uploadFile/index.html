@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload File</title>
+
+</head>
+
+<body>
+
+    <style>
+        body,
+        html {
+            background-color: #444;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        input {
+            margin: 40px;
+            color: white;
+        }
+    </style>
+
+    <form id="formulario" enctype="multipart/form-data">
+        <input type="file" id="file" webkitdirectory directory multiple />
+        <button id="Teste">Enviar</button>
+    </form>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
